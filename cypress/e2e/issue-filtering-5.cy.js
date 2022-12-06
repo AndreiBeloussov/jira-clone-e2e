@@ -28,3 +28,4 @@ describe('Issue filtering', () => {
 
   const getSearchInput = () => cy.get('[data-testid="board-filters"]').find('input');
 });
+
