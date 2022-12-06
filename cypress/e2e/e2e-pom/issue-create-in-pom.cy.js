@@ -9,7 +9,15 @@ describe('Issue create', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.intercept('GET','**/currentUser').as('currentUserApiRequest')
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+    cy.url().should('eq', 'http://34.247.67.214:8080/project').then((url) => {
+=======
+    cy.url().should('eq', `${Cypress.env('baseUrl')}project`).then((url) => {
+>>>>>>> Stashed changes
+=======
     cy.url().should('eq', 'https://jira.ivorreic.com/project').then((url) => {
+>>>>>>> 7686df2a8bdf06f93d64b633bb15e9bbb1f5d0e1
       cy.wait('@currentUserApiRequest')
       cy.visit(url + '/settings?modal-issue-create=true');
     });

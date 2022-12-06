@@ -5,8 +5,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'https://jira.ivorreic.com/project',
+    baseUrl: 'https://jira.ivorreic.com/',
+    env: {
+      baseUrl: 'https://jira.ivorreic.com/',
+    },
     defaultCommandTimeout: 30000,
+    requestTimeout: 15000,
     projectId: "hac4oa",
   },
 });
