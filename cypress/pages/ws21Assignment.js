@@ -48,6 +48,12 @@ assertNotDeleted() {
     .should('be.visible');
 }
 
+taskTwo() {
+    this.openModal();
+    this.cancelDeletion();
+    this.assertNotDeleted();
+}
+
 }
 
 export default new ws21Assignment(); 

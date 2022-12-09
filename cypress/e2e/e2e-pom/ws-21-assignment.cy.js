@@ -11,7 +11,7 @@ describe('Workshop 21 assignment', () => {
         });
 });
 
-it.only('Open recently created issue and delete it', () => {
+it('Open recently created issue and delete it', () => {
     // //Open recently created issue
     // cy.get('[data-testid="board-list:backlog"] p').eq(0).click();
     // //Delete issue
@@ -31,6 +31,8 @@ it('Start deletion process for recently created issue, but cancel it', () => {
     // cy.get('.sc-kgoBCf > .ewzfNn').click();
     // //Assert it is not deleted
     // cy.get('.sc-cbkKFq').should('be.visible');
+
+    ws21Assignment.taskTwo();
     
 
 });
