@@ -81,7 +81,7 @@ class ws23Assignment {
         cy.get(this.estimation)
         .click()
         .clear();
-        cy.wait(2000);
+        cyпше .wait(2000);
         cy.get(this.closeButton)
         .click();
         cy.contains(this.createdIssue)
