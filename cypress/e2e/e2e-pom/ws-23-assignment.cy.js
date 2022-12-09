@@ -1,4 +1,4 @@
-
+import ws23Assignment from "../../pages/ws23Assignment"; 
 
 describe('Workshop 23 assignment', () => {
     beforeEach(() => {
@@ -61,6 +61,10 @@ describe('Workshop 23 assignment', () => {
         cy.get('[data-testid="board-list:backlog"] p').eq(0).click();
         //Assert estimation is empty
         cy.get("div>input[placeholder='Number']").should('be.visible');
+    });
+
+    it.only('OOP test', () => {
+        ws23Assignment.WholeAssignment();
     });
 
 });
